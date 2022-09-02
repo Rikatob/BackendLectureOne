@@ -13,15 +13,18 @@ public class RomanNumberTests {
 
     @Test
     void shouldReturnIIfor2(){
-        assertEquals("I", toRomanNumber(1));
+        assertEquals("II", toRomanNumber(2));
     }
 
+    @Test
+    void shouldReturnIIIfor3(){
+        assertEquals("III", toRomanNumber(3));
+    }
     private String toRomanNumber(int n) {
         String result = "I";
 
         if(n == 2){
             result += "I";
-
         }
 
         return result;
