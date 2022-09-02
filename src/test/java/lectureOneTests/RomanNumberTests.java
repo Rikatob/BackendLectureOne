@@ -21,6 +21,12 @@ public class RomanNumberTests {
         assertEquals("III", toRomanNumber(3));
     }
 
+    @Test
+    void shouldReturnIIIIfor4() {
+        assertEquals("IIII", toRomanNumber(4));
+    }
+
+
     private String toRomanNumber(int n) {
         String result = "I";
 
