@@ -11,12 +11,19 @@ public class RomanNumberTests {
         assertEquals("I", toRomanNumber(1));
     }
 
-    private String toRomanNumber(int n) {
-        String result = "";
+    @Test
+    void shouldReturnIIfor2(){
+        assertEquals("I", toRomanNumber(1));
+    }
 
-        if(n == 1){
+    private String toRomanNumber(int n) {
+        String result = "I";
+
+        if(n == 2){
             result += "I";
+
         }
-        return null;
+
+        return result;
     }
 }
