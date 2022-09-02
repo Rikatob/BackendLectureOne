@@ -23,18 +23,16 @@ public class RomanNumberTests {
 
     @Test
     void shouldReturnIIIIfor4() {
-        assertEquals("IIII", toRomanNumber(4));
+        assertEquals("IV", toRomanNumber(4));
     }
 
 
     private String toRomanNumber(int n) {
-        String result = "I";
+        String result = "";
 
-        if (n >= 2) {
+        while (n > 0) {
             result += "I";
-        }
-        if (n >= 3) {
-            result += "I";
+            n -= 1;
         }
 
         return result;
