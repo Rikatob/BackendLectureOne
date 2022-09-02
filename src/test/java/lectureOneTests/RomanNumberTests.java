@@ -12,8 +12,11 @@ public class RomanNumberTests {
     }
 
     private String toRomanNumber(int n) {
+        String result = "";
 
-
+        if(n == 1){
+            result += "I";
+        }
         return null;
     }
 }
